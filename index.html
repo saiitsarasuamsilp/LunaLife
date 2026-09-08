@@ -461,7 +461,6 @@
 <header>
   <nav class="wrap">
     <a class="brand" href="#top">
-      <!-- Temporary Mark Icon -->
       <svg class="mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13 24C8 24 4.5 20.5 4.5 16C4.5 12.5 7 10.5 8.5 8C9.3 11 11 11.5 11 9C11 6.8 9.5 5 9.5 5C13 5 16.5 8.5 16.5 13C16.5 14 16.2 14.8 16 15.5C17.2 14.3 17.5 12.8 17.5 12.8C19.5 15 21.5 17.5 21.5 20C21.5 22.5 17.5 24 13 24Z" fill="#707E5E"/>
       </svg>
@@ -623,12 +622,13 @@
         </div>
       </div>
 
-      <form class="booking-panel" id="booking-form">
+      <!-- WEB3FORMS BOOKING FORM -->
+      <form class="booking-panel" id="booking-form" action="https://api.web3forms.com/submit" method="POST">
         <h3>Reserve a time</h3>
         <p class="sub">No payment needed to hold your spot.</p>
 
-        <!-- Get a free key at https://web3forms.com and paste it below -->
-        <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="85688a34-7d1c-4e77-aec5-036898a8ec66">
         <input type="hidden" name="subject" value="New booking request — Luna Life Spa">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
@@ -638,21 +638,27 @@
             <input id="name" name="name" type="text" required placeholder="Your name">
           </div>
           <div class="field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" required placeholder="08X-XXX-XXXX">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="your@email.com">
           </div>
         </div>
 
-        <div class="field">
-          <label for="treatment">Treatment</label>
-          <select id="treatment" name="treatment">
-            <option>Classic Steam Facial — 45 min</option>
-            <option>Herbal Steam & Clay — 60 min</option>
-            <option>Deep Pore Reset — 75 min</option>
-            <option>Bridal & Event Glow — 90 min</option>
-            <option>Sensitive Skin Steam — 45 min</option>
-            <option>Not sure yet</option>
-          </select>
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="08X-XXX-XXXX">
+          </div>
+          <div class="field">
+            <label for="treatment">Treatment</label>
+            <select id="treatment" name="treatment">
+              <option>Classic Steam Facial — 45 min</option>
+              <option>Herbal Steam & Clay — 60 min</option>
+              <option>Deep Pore Reset — 75 min</option>
+              <option>Bridal & Event Glow — 90 min</option>
+              <option>Sensitive Skin Steam — 45 min</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
         </div>
 
         <div class="field-row">
@@ -667,8 +673,8 @@
         </div>
 
         <div class="field">
-          <label for="notes">Anything we should know</label>
-          <textarea id="notes" name="notes" placeholder="Skin concerns, allergies, or a note for us"></textarea>
+          <label for="message">Anything we should know (Message)</label>
+          <textarea id="message" name="message" required placeholder="Skin concerns, allergies, or a note for us"></textarea>
         </div>
 
         <button type="submit" class="btn-primary">Request booking</button>
@@ -721,12 +727,6 @@
     var note = document.getElementById('form-note');
     var original = btn.textContent;
 
-    if (form.access_key.value.indexOf('PASTE_YOUR') === 0){
-      note.textContent = 'This form is not connected yet — add a Web3Forms access key in the code to go live.';
-      note.style.color = '#b5533c';
-      return;
-    }
-
     btn.textContent = 'Sending…';
     btn.disabled = true;
 
@@ -740,7 +740,7 @@
         if (data.success){
           btn.textContent = 'Request sent';
           note.textContent = "Thanks — we'll confirm your time within one business day.";
-          note.style.color = '';
+          note.style.color = '#707E5E';
           form.reset();
         } else {
           throw new Error(data.message || 'Submission failed');
