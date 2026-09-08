@@ -3,761 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- SEO Meta Tags -->
-<title>Luna Life Clinic — คลินิกดูแลผิวพรรณ ทรีตเมนต์หน้า | Luna Life Clinic</title>
-<meta name="description" content="Luna Life Clinic คลินิกดูแลผิวพรรณ และทรีตเมนต์หน้าครบวงจร ปรนนิบัติผิวด้วยความประณีต รักษาสิว ฟื้นฟูผิวกระจ่างใสและยกกระชับ Luna Life Clinic Studio">
-<meta name="keywords" content="Luna Life Clinic, คลินิกเสริมความงาม, คลินิกดูแลผิวหน้า, ทรีตเมนต์หน้า, รักษาสิว, กดสิว, นวดหน้ายกกระชับ, ผิวแพ้ง่าย, ฟื้นฟูผิวพรรณ, คลินิกผิวพรรณ, Luna Life Clinic, Facial Treatment, Skin Care Clinic, Medical Spa, Acne Treatment, Facial Massage, Skin Glow, Luna Life Clinic Studio">
-<meta name="robots" content="index, follow">
-
+<title>Luna Life Clinic — Refine Your Natural Radiance</title>
+<meta name="description" content="Luna Life Clinic คลินิกดูแลผิวพรรณและทรีตเมนต์หน้า">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --bg-main: #FAF8F5;
-    --bg-card: #FFFFFF;
-    --bg-alt: #F3EFEA;
-    --text-primary: #1A1A1A;
-    --text-muted: #666058;
-    --accent-gold: #C5A059;
-    --accent-gold-light: #E8D8B8;
-    --accent-dark: #23201D;
-    --line-color: rgba(197, 160, 89, 0.22);
-    --border-light: rgba(0, 0, 0, 0.06);
-    --radius: 4px;
-  }
+:root{
+  --cream:#f7f1e8; --cream2:#efe4d4; --gold:#b38a45; --gold2:#d8be8a;
+  --brown:#39332c; --muted:#746b61; --white:#fffdf9;
+  --line:rgba(145,108,52,.18); --shadow:0 20px 60px rgba(73,53,30,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--brown);background:var(--cream);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92%);margin:auto}
+.serif{font-family:"Cormorant Garamond",serif}
+.eyebrow{font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+.section{padding:100px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 52px}
+.section-head h2{font:500 clamp(36px,4vw,56px)/1.05 "Cormorant Garamond",serif;margin:12px 0}
+.section-head p{color:var(--muted);font-size:14px}
 
-  *{box-sizing:border-box; margin:0; padding:0;}
+/* HEADER */
+header{
+ position:absolute;top:0;left:0;width:100%;z-index:50;
+ background:rgba(250,247,241,.86);backdrop-filter:blur(14px);
+ border-bottom:1px solid rgba(170,130,70,.14);
+}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--gold)}
+.logo-mark{width:35px;height:35px;border:1px solid var(--gold);border-radius:50%;
+ display:grid;place-items:center;font:20px "Cormorant Garamond",serif}
+.logo-text{font:600 18px "Cormorant Garamond",serif;letter-spacing:5px}
+.navlinks{display:flex;align-items:center;gap:35px;font-size:11px;letter-spacing:2px}
+.navlinks a{transition:.25s}.navlinks a:hover{color:var(--gold)}
+.book{background:var(--gold);color:white;padding:13px 27px;border-radius:30px;font-size:11px;letter-spacing:1.5px}
+.menu{display:none;border:0;background:none;font-size:25px;color:var(--brown)}
 
-  html{scroll-behavior:smooth;}
+/* HERO */
+.hero{min-height:720px;position:relative;overflow:hidden;background:#eee2d3;padding-top:82px}
+.hero-bg{
+ position:absolute;inset:0;background-image:url("lunalife-hero.png");
+ background-size:cover;background-position:center center;background-repeat:no-repeat;
+ transform:scale(1.01);
+}
+.hero-bg:after{
+ content:"";position:absolute;inset:0;
+ background:linear-gradient(90deg,rgba(248,241,231,.08),transparent 48%,rgba(181,145,78,.05));
+}
+.hero-content{position:relative;z-index:2;min-height:638px;display:flex;align-items:center}
+.hero-copy{width:48%;padding:50px 0 70px}
+.hero-copy h1{font:500 clamp(54px,6vw,82px)/.88 "Cormorant Garamond",serif;letter-spacing:-1px;margin:15px 0}
+.hero-copy h1 em{color:var(--gold);font-weight:400}
+.hero-copy .thai-title{font-size:19px;margin:22px 0 10px;font-weight:500}
+.hero-copy p{max-width:570px;color:#5e564d;font-size:14px}
+.actions{display:flex;gap:12px;margin-top:30px}
+.btn{padding:14px 25px;border-radius:30px;font-size:12px;transition:.3s}
+.btn-primary{background:var(--gold);color:#fff}
+.btn-outline{border:1px solid var(--gold);color:var(--brown);background:rgba(255,255,255,.28)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(90,60,20,.12)}
 
-  body{
-    background: var(--bg-main);
-    color: var(--text-primary);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+/* FEATURE STRIP */
+.features{background:rgba(255,253,249,.72);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.feature{padding:28px 35px;display:flex;align-items:center;gap:18px;border-right:1px solid var(--line)}
+.feature:last-child{border:0}
+.feature-icon{font-size:30px;color:var(--gold);font-family:"Cormorant Garamond",serif}
+.feature strong{display:block;font-size:11px;letter-spacing:2px;font-weight:500}
+.feature span{font-size:12px;color:var(--muted)}
 
-  h1, h2, h3, h4, .serif {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
+/* TREATMENTS */
+.treatments{position:relative;overflow:hidden}
+.treatments:before,.experience:before{
+ content:"";position:absolute;width:500px;height:500px;border-radius:50%;
+ background:rgba(255,255,255,.38);filter:blur(70px);top:0;left:-220px;
+}
+.cards{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:rgba(255,253,249,.82);border:1px solid var(--line);box-shadow:var(--shadow);transition:.35s;overflow:hidden}
+.card:hover{transform:translateY(-7px)}
+.card-img{height:230px;overflow:hidden;background:var(--cream2)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .card-img img{transform:scale(1.04)}
+.card-body{padding:24px}
+.card-no{font-size:9px;letter-spacing:2px;color:var(--gold)}
+.card h3{font:500 27px/1.1 "Cormorant Garamond",serif;margin:9px 0}
+.card p{font-size:12px;color:var(--muted);min-height:60px}
+.meta{display:flex;justify-content:space-between;margin-top:18px;padding-top:15px;border-top:1px solid var(--line);font-size:10px;color:var(--gold);letter-spacing:1px}
 
-  a{color:inherit; text-decoration:none;}
+/* EXPERIENCE */
+.experience{position:relative;background:#eee4d7}
+.exp-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.exp-image{height:570px;background:url("lunalife-hero.png") center/cover;border-radius:2px;box-shadow:var(--shadow)}
+.exp-copy h2{font:500 clamp(42px,5vw,65px)/.95 "Cormorant Garamond",serif;margin:14px 0 25px}
+.exp-copy p{font-size:14px;color:var(--muted);margin-bottom:18px}
+.signature{font:italic 28px "Cormorant Garamond",serif;color:var(--gold);margin-top:30px}
 
-  .wrap{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 28px;
-  }
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about h2{font:500 58px/.95 "Cormorant Garamond",serif;margin:15px 0 25px}
+.about p{color:var(--muted);font-size:14px;margin-bottom:18px}
+.quote{border-left:1px solid var(--gold);padding-left:25px;font:italic 25px/1.25 "Cormorant Garamond",serif;color:#5a4d3e}
+.about-box{background:var(--white);padding:50px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.about-box h3{font:500 34px "Cormorant Garamond",serif;color:var(--gold)}
+.about-box p{margin-top:12px}
 
-  /* ---------- Header / Nav ---------- */
-  header{
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(250, 248, 245, 0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-light);
-  }
-  nav.wrap{
-    display: flex; align-items: center; justify-content: space-between;
-    height: 90px;
-  }
-  .brand{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent-dark);
-    display: flex; align-items: center; gap: 12px;
-  }
-  .brand-logo-mark {
-    width: 22px; height: 22px;
-    border: 1px solid var(--accent-gold);
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-  }
-  .brand-logo-mark::after {
-    content: '';
-    position: absolute; top: 4px; left: 4px; right: 4px; bottom: 4px;
-    background: var(--accent-gold);
-    border-radius: 50%;
-    opacity: 0.6;
-  }
-  .navlinks{
-    display: flex; gap: 40px; align-items: center;
-    list-style: none;
-  }
-  .navlinks a{
-    font-size: 0.88rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    transition: color 0.3s ease;
-  }
-  .navlinks a:hover{ color: var(--accent-gold); }
-  .nav-cta{
-    border: 1px solid var(--accent-gold);
-    color: var(--accent-dark) !important;
-    padding: 10px 24px;
-    border-radius: var(--radius);
-    transition: all 0.3s ease !important;
-  }
-  .nav-cta:hover{
-    background: var(--accent-gold);
-    color: #FFF !important;
-  }
+/* BOOKING */
+.booking{background:#3b342c;color:#fff7eb}
+.booking .section-head p{color:#d7cbbb}
+.booking .section-head h2{color:#fff8ed}
+.booking-wrap{max-width:820px;margin:auto}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input,select,textarea{width:100%;padding:15px 16px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:white;font:13px "Plus Jakarta Sans",sans-serif;outline:none}
+select option{color:#333}
+textarea{grid-column:1/-1;min-height:120px;resize:vertical}
+.form-btn{grid-column:1/-1;border:0;background:var(--gold);color:white;padding:15px;border-radius:30px;font:500 12px "Plus Jakarta Sans";letter-spacing:1px;cursor:pointer}
+.success{display:none;margin-top:18px;text-align:center;color:#e4d2b3;font-size:13px}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    padding: 110px 0 100px;
-    text-align: center;
-    background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-alt) 100%);
-    border-bottom: 1px solid var(--border-light);
-  }
-  .hero-subtitle {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    color: var(--accent-gold);
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .hero h1{
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    max-width: 880px;
-    margin: 0 auto 24px;
-    line-height: 1.15;
-    color: var(--accent-dark);
-  }
-  .hero p{
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    max-width: 620px;
-    margin: 0 auto 40px;
-    font-weight: 300;
-  }
-  .hero-actions{
-    display: flex; justify-content: center; gap: 20px;
-  }
-  .btn-primary{
-    background: var(--accent-dark);
-    color: #FAF8F5;
-    padding: 16px 36px;
-    font-size: 0.88rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: var(--radius);
-    border: 1px solid var(--accent-dark);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-  .btn-primary:hover{
-    background: var(--accent-gold);
-    border-color: var(--accent-gold);
-    color: #FFF;
-  }
-  .btn-secondary{
-    background: transparent;
-    color: var(--accent-dark);
-    padding: 16px 36px;
-    font-size: 0.88rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: var(--radius);
-    border: 1px solid rgba(0,0,0,0.15);
-    display: inline-block;
-    transition: all 0.3s ease;
-  }
-  .btn-secondary:hover{
-    border-color: var(--accent-gold);
-    color: var(--accent-gold);
-  }
+/* CONTACT */
+.contact{background:#f1e7d9}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-info h2{font:500 55px/.95 "Cormorant Garamond",serif;margin:12px 0 25px}
+.contact-info p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.contact-list{margin-top:25px;display:grid;gap:12px;font-size:13px}
+.map{min-height:390px;border:1px solid var(--line);background:#dfd3c2;overflow:hidden}
+.map iframe{width:100%;height:100%;min-height:390px;border:0;filter:sepia(.12) saturate(.8)}
 
-  /* ---------- Feature Strip ---------- */
-  .strip{
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--border-light);
-    padding: 32px 0;
-  }
-  .strip .wrap{
-    display: flex; justify-content: space-around; flex-wrap: wrap; gap: 24px;
-    text-align: center;
-  }
-  .strip-item{
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    letter-spacing: 0.02em;
-  }
-  .strip-item strong{
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    color: var(--accent-dark);
-    margin-bottom: 2px;
-  }
+/* FOOTER */
+footer{background:#2d2925;color:#cfc5b8;padding:45px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:center}
+.footer-logo{font:500 24px "Cormorant Garamond",serif;letter-spacing:5px;color:#e0c28b}
+footer small{font-size:10px;letter-spacing:1px}
 
-  /* ---------- Section Common ---------- */
-  section{ padding: 120px 0; }
-  .section-title{
-    text-align: center;
-    margin-bottom: 64px;
-  }
-  .section-title .sub{
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--accent-gold);
-    margin-bottom: 12px;
-    display: block;
-  }
-  .section-title h2{
-    font-size: clamp(2.2rem, 3.5vw, 3rem);
-    color: var(--accent-dark);
-  }
+/* FLOAT */
+.float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:white;font-size:10px;box-shadow:0 8px 25px rgba(0,0,0,.15)}
 
-  /* ---------- Services ---------- */
-  .services-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-  }
-  .service-card{
-    background: var(--bg-card);
-    padding: 48px 36px;
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .service-card:hover{
-    transform: translateY(-4px);
-    border-color: var(--accent-gold);
-    box-shadow: 0 16px 32px rgba(0,0,0,0.03);
-  }
-  .service-card h3{
-    font-size: 1.5rem;
-    color: var(--accent-dark);
-    margin-bottom: 14px;
-  }
-  .service-card p{
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    font-weight: 300;
-    line-height: 1.7;
-    margin-bottom: 28px;
-  }
-  .service-price{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem;
-    color: var(--accent-gold);
-    border-top: 1px solid var(--border-light);
-    padding-top: 18px;
-  }
-
-  /* ---------- Experience / Process ---------- */
-  .process-section{ background: var(--bg-alt); }
-  .process-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-  .process-item{
-    position: relative;
-    padding-top: 24px;
-  }
-  .process-item::before{
-    content: '';
-    position: absolute; top: 0; left: 0; width: 40px; height: 1px;
-    background: var(--accent-gold);
-  }
-  .process-num{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem;
-    color: var(--accent-gold);
-    margin-bottom: 12px;
-  }
-  .process-item h3{
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: var(--accent-dark);
-  }
-  .process-item p{
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 300;
-  }
-
-  /* ---------- Booking & Location ---------- */
-  .booking-grid{
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 64px;
-    align-items: start;
-  }
-  .booking-info h2{
-    font-size: 2.6rem;
-    margin-bottom: 20px;
-    color: var(--accent-dark);
-  }
-  .booking-info p{
-    color: var(--text-muted);
-    font-weight: 300;
-    margin-bottom: 36px;
-  }
-  .hours-box{
-    border-top: 1px solid var(--line-color);
-    padding-top: 28px;
-    margin-bottom: 36px;
-  }
-  .hours-box dl{
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 12px;
-    font-size: 0.92rem;
-  }
-  .hours-box dt{ color: var(--text-muted); }
-  .hours-box dd{ color: var(--accent-dark); font-weight: 500; }
-
-  .map-box {
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--border-light);
-  }
-  .map-box iframe {
-    width: 100%;
-    height: 220px;
-    display: block;
-    filter: grayscale(20%);
-  }
-
-  /* Form */
-  .booking-panel{
-    background: var(--bg-card);
-    padding: 52px;
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.02);
-  }
-  .booking-panel h3{
-    font-size: 1.8rem;
-    color: var(--accent-dark);
-    margin-bottom: 8px;
-  }
-  .booking-panel .sub-text{
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 32px;
-  }
-  .form-row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .form-group{ margin-bottom: 22px; }
-  .form-group label{
-    display: block;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-  }
-  .form-group input, .form-group select, .form-group textarea{
-    width: 100%;
-    background: var(--bg-main);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    font-family: inherit;
-    font-size: 0.92rem;
-    color: var(--text-primary);
-    transition: border-color 0.3s ease;
-  }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus{
-    outline: none;
-    border-color: var(--accent-gold);
-    background: #FFF;
-  }
-  .booking-panel .btn-primary{ width: 100%; text-align: center; margin-top: 10px; }
-  .form-note{
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 16px;
-    text-align: center;
-  }
-
-  /* ---------- Footer ---------- */
-  footer{
-    background: var(--accent-dark);
-    color: #FAF8F5;
-    padding: 90px 0 40px;
-    border-top: 1px solid var(--line-color);
-  }
-  .footer-grid{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  footer h4{
-    font-size: 1.6rem;
-    letter-spacing: 0.05em;
-    margin-bottom: 16px;
-    color: #FFF;
-  }
-  footer p{
-    color: #A39E93;
-    font-size: 0.92rem;
-    font-weight: 300;
-  }
-  .footer-col-title{
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--accent-gold);
-    margin-bottom: 20px;
-  }
-  footer ul{ list-style: none; }
-  footer li{ margin-bottom: 12px; font-size: 0.92rem; color: #A39E93; }
-  footer a{ transition: color 0.3s ease; }
-  footer a:hover{ color: var(--accent-gold); }
-  
-  .footer-bottom{
-    padding-top: 32px;
-    display: flex; justify-content: space-between;
-    font-size: 0.82rem;
-    color: #7A756C;
-    flex-wrap: wrap; gap: 16px;
-  }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width: 992px){
-    .services-grid{ grid-template-columns: 1fr; }
-    .process-grid{ grid-template-columns: 1fr 1fr; row-gap: 40px; }
-    .booking-grid{ grid-template-columns: 1fr; }
-    .footer-grid{ grid-template-columns: 1fr; gap: 40px; }
-  }
-  @media (max-width: 768px){
-    .navlinks{ display: none; }
-    .form-row{ grid-template-columns: 1fr; }
-    .booking-panel{ padding: 32px 24px; }
-  }
+/* MOBILE */
+@media(max-width:900px){
+ .navlinks{display:none}.menu{display:block}
+ .hero{min-height:760px}
+ .hero-bg{background-position:58% center}
+ .hero-content{align-items:flex-end}
+ .hero-copy{width:100%;padding:0 0 45px}
+ .hero-copy:before{content:"";position:absolute;inset:auto 0 0 0;height:58%;background:linear-gradient(transparent,rgba(247,241,232,.96));z-index:-1}
+ .hero-copy h1{font-size:60px}
+ .feature-grid{grid-template-columns:1fr}
+ .feature{border-right:0;border-bottom:1px solid var(--line);padding:20px}
+ .cards{grid-template-columns:1fr 1fr}
+ .exp-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}
+ .exp-image{height:400px}
+}
+@media(max-width:600px){
+ .section{padding:72px 0}
+ .hero{min-height:690px;padding-top:75px}
+ .hero-bg{background-position:62% center}
+ .hero-copy h1{font-size:50px}
+ .hero-copy .thai-title{font-size:16px}
+ .hero-copy p{font-size:12px}
+ .actions{flex-wrap:wrap}
+ .btn{padding:12px 19px}
+ .cards{grid-template-columns:1fr}
+ .card-img{height:240px}
+ form{grid-template-columns:1fr}
+ textarea,.form-btn{grid-column:auto}
+ .about h2,.contact-info h2{font-size:48px}
+ .about-box{padding:32px}
+ .footer-grid{flex-direction:column;text-align:center}
+}
 </style>
 </head>
-<body>
 
+<body>
 <header>
-  <nav class="wrap">
-    <a class="brand" href="#top">
-      <span class="brand-logo-mark"></span>
-      Luna Life Clinic
-    </a>
-    <ul class="navlinks">
-      <li><a href="#services">Treatments / บริการทรีตเมนต์</a></li>
-      <li><a href="#experience">The Experience</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#booking" class="nav-cta">Book Appointment</a></li>
-    </ul>
+ <div class="container nav">
+  <a class="logo" href="#home">
+   <span class="logo-mark">☾</span><span class="logo-text">LUNALIFE</span>
+  </a>
+  <nav class="navlinks">
+   <a href="#home">HOME</a><a href="#treatments">TREATMENTS</a><a href="#experience">THE EXPERIENCE</a>
+   <a href="#about">ABOUT US</a><a href="#contact">CONTACT</a>
+   <a class="book" href="#booking">BOOK NOW</a>
   </nav>
+  <button class="menu" aria-label="menu">☰</button>
+ </div>
 </header>
 
-<main id="top">
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="wrap">
-      <p class="hero-subtitle">Luna Life Clinic</p>
-      <h1>Refine Your Natural Radiance — คลินิกดูแลผิวพรรณเพื่อความงดงามที่เป็นธรรมชาติ</h1>
-      <p>Luna Life Clinic คลินิกเสริมความงามที่ผสานศาสตร์แห่งการรักษาสิว ทรีตเมนต์หน้า และการฟื้นฟูผิวพรรณล้ำลึก สัมผัสประสบการณ์ Facial Treatment เกรดพรีเมียมที่ออกแบบเฉพาะบุคคล</p>
-      <div class="hero-actions">
-        <a href="#booking" class="btn-primary">จองคิวรับบริการ (Book Now)</a>
-        <a href="#services" class="btn-secondary">ดูบริการทรีตเมนต์ (Treatments)</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURE STRIP -->
-  <div class="strip">
-    <div class="wrap">
-      <div class="strip-item">
-        <strong>Personalized Skin Care</strong>
-        วิเคราะห์สภาพผิวและดูแลเฉพาะบุคคล
-      </div>
-      <div class="strip-item">
-        <strong>Private Facial Suite</strong>
-        ห้องทรีตเมนต์ส่วนตัวระดับพรีเมียม
-      </div>
-      <div class="strip-item">
-        <strong>Aesthetic &amp; Medical Grade</strong>
-        นวัตกรรมฟื้นฟูผิวพรรณที่ปลอดภัย
-      </div>
-    </div>
+<main>
+<section class="hero" id="home">
+ <div class="hero-bg"></div>
+ <div class="container hero-content">
+  <div class="hero-copy">
+   <div class="eyebrow">LUNALIFE CLINIC</div>
+   <h1>Refine Your<br><em>Natural Radiance</em></h1>
+   <div class="thai-title">คลินิกดูแลผิวพรรณเพื่อความงามที่เป็นธรรมชาติ</div>
+   <p>Luna Life Clinic คลินิกเสริมความงามที่ผสานศาสตร์แห่งการดูแลผิว ทรีตเมนต์หน้า และการฟื้นฟูผิวพรรณอย่างละมุน สัมผัสประสบการณ์ Facial Treatment เกรดพรีเมียมที่ออกแบบเฉพาะบุคคล</p>
+   <div class="actions">
+    <a class="btn btn-primary" href="#booking">จองคิวรับบริการ　→</a>
+    <a class="btn btn-outline" href="#treatments">ดูบริการทรีตเมนต์　→</a>
+   </div>
   </div>
+ </div>
+</section>
 
-  <!-- SERVICES SECTION -->
-  <section id="services">
-    <div class="wrap">
-      <div class="section-title">
-        <span class="sub">Tailored Aesthetic Treatments</span>
-        <h2>บริการดูแลผิวพรรณ และทรีตเมนต์หน้า (Facial Services)</h2>
-      </div>
-      
-      <div class="services-grid">
+<section class="features">
+ <div class="container feature-grid">
+  <div class="feature"><div class="feature-icon">⌁</div><div><strong>PERSONALIZED SKIN CARE</strong><span>ดูแลเฉพาะบุคคล</span></div></div>
+  <div class="feature"><div class="feature-icon">◯</div><div><strong>PRIVATE FACIAL SUITE</strong><span>ห้องทรีตเมนต์ส่วนตัวระดับพรีเมียม</span></div></div>
+  <div class="feature"><div class="feature-icon">◇</div><div><strong>AESTHETIC & MEDICAL GRADE</strong><span>นวัตกรรมเพื่อการดูแลผิวอย่างใส่ใจ</span></div></div>
+ </div>
+</section>
 
-        <div class="service-card">
-          <div>
-            <h3>Signature Steam &amp; Glow</h3>
-            <p>ทรีตเมนต์ปรนนิบัติผิวด้วยไอน้ำสมุนไพรธรรมชาติ เปิดรูขุมขน ผลัดเซลล์ผิวอย่างอ่อนโยน คืนความกระจ่างใสดูมีออร่า (Skin Glow Therapy)</p>
-          </div>
-          <div class="service-price">45 Min · 1,200 THB</div>
-        </div>
+<section class="section treatments" id="treatments">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">TAILORED AESTHETIC TREATMENTS</div>
+   <h2>บริการดูแลผิวพรรณ และทรีตเมนต์หน้า</h2>
+   <p>( FACIAL SERVICES )</p>
+  </div>
+  <div class="cards">
+   <article class="card"><div class="card-img"><img src="a1.jpg" alt="Luna Life treatment"></div><div class="card-body"><div class="card-no">01 / LUNA SIGNATURE</div><h3>Signature Steam & Glow</h3><p>ทรีตเมนต์ปรนนิบัติผิวด้วยไอน้ำอุ่นและการดูแลอย่างละมุน</p><div class="meta"><span>45 MIN · 1,200 THB</span><span>→</span></div></div></article>
+   <article class="card"><div class="card-img"><img src="lunalife-hero.png" alt="Facial treatment"></div><div class="card-body"><div class="card-no">02 / CLEAR SKIN</div><h3>Acne Clear & Detox Reset</h3><p>ดูแลผิวที่มีแนวโน้มเป็นสิวด้วยขั้นตอนทำความสะอาดและปลอบประโลมผิว</p><div class="meta"><span>60 MIN · 1,800 THB</span><span>→</span></div></div></article>
+   <article class="card"><div class="card-img"><img src="a2.jpg" alt="Lifting facial"></div><div class="card-body"><div class="card-no">03 / LIFTING</div><h3>Ultra Lifting Facial</h3><p>นวดหน้าและดูแลผิวเพื่อให้ผิวดูสดชื่น ผ่อนคลาย และกระจ่างใสขึ้น</p><div class="meta"><span>75 MIN · 2,500 THB</span><span>→</span></div></div></article>
+   <article class="card"><div class="card-img"><img src="a3.jpg" alt="Sensitive skin therapy"></div><div class="card-body"><div class="card-no">04 / SENSITIVE</div><h3>Sensitive Skin Therapy</h3><p>ขั้นตอนอ่อนโยนสำหรับวันที่ผิวต้องการการพักและการดูแลอย่างใส่ใจ</p><div class="meta"><span>60 MIN · 1,800 THB</span><span>→</span></div></div></article>
+   <article class="card"><div class="card-img"><img src="lunalife-hero.png" alt="Bridal facial"></div><div class="card-body"><div class="card-no">05 / SPECIAL EVENT</div><h3>Bridal & Event Radiance</h3><p>เตรียมผิวก่อนวันสำคัญด้วยประสบการณ์ทรีตเมนต์แบบพรีเมียม</p><div class="meta"><span>90 MIN · 3,000 THB</span><span>→</span></div></div></article>
+   <article class="card"><div class="card-img"><img src="lunalife-hero.png" alt="Membership"></div><div class="card-body"><div class="card-no">06 / MEMBERSHIP</div><h3>Luna Life Membership</h3><p>แพ็กเกจดูแลผิวสำหรับผู้ที่ต้องการสร้าง routine อย่างต่อเนื่อง</p><div class="meta"><span>PERSONALIZED</span><span>→</span></div></div></article>
+  </div>
+ </div>
+</section>
 
-        <div class="service-card">
-          <div>
-            <h3>Acne Clear &amp; Detox Reset</h3>
-            <p>โปรแกรมรักษาสิวและทำความสะอาดผิวหน้าล้ำลึก กดสิวอุดตัน มาสก์โคลนธรรมชาติ พร้อมฉายแสงบำบัดฆ่าเชื้อสิว (Acne Treatment &amp; Cleansing)</p>
-          </div>
-          <div class="service-price">60 Min · 1,800 THB</div>
-        </div>
+<section class="section experience" id="experience">
+ <div class="container exp-grid">
+  <div class="exp-image"></div>
+  <div class="exp-copy">
+   <div class="eyebrow">THE EXPERIENCE</div>
+   <h2>A Moment<br>Made for You</h2>
+   <p>ทุกช่วงเวลาที่ Luna Life ถูกออกแบบให้คุณได้พักจากความเร่งรีบ และกลับมาใส่ใจตัวเองอีกครั้ง</p>
+   <p>ตั้งแต่บรรยากาศที่อบอุ่น ห้องทรีตเมนต์ที่เป็นส่วนตัว ไปจนถึงขั้นตอนการดูแลที่พิถีพิถัน เราเชื่อว่าความงามที่ดีควรเริ่มต้นจากความรู้สึกที่ดี</p>
+   <div class="signature">Your skin. Your moment.</div>
+  </div>
+ </div>
+</section>
 
-        <div class="service-card">
-          <div>
-            <h3>Ultra Lifting &amp; Facial Massage</h3>
-            <p>นวดหน้ายกกระชับสไตล์ Lymphatic Drainage กระตุ้นการไหลเวียนโลหิตและสร้างคอลลาเจน ปรับกรอบหน้าให้คมชัด (Facial Contour &amp; Lifting)</p>
-          </div>
-          <div class="service-price">75 Min · 2,500 THB</div>
-        </div>
+<section class="section about" id="about">
+ <div class="container about-grid">
+  <div>
+   <div class="eyebrow">ABOUT LUNA LIFE</div>
+   <h2>Beauty in<br>its own rhythm.</h2>
+   <p>Luna Life Clinic เกิดจากแนวคิดที่อยากสร้างพื้นที่ดูแลผิวที่แตกต่างจากความรู้สึกของคลินิกทั่วไป — เรียบ สงบ เป็นส่วนตัว และใส่ใจในรายละเอียด</p>
+   <p>เราให้ความสำคัญกับประสบการณ์ของแต่ละคน และเลือกนำเสนอการดูแลที่เหมาะกับสภาพผิวและความต้องการของคุณ</p>
+  </div>
+  <div class="about-box">
+   <h3 class="serif">A softer approach<br>to beautiful skin.</h3>
+   <p>เพราะเราเชื่อว่าความงามไม่จำเป็นต้องเปลี่ยนคุณให้เป็นใครอีกคน แต่คือการช่วยให้คุณรู้สึกดีกับตัวเองในแบบที่เป็นคุณ</p>
+   <div class="quote">“Refine, never redefine.”</div>
+  </div>
+ </div>
+</section>
 
-        <div class="service-card">
-          <div>
-            <h3>Sensitive Skin Therapy</h3>
-            <p>ทรีตเมนต์ฟื้นฟูผิวแพ้ง่าย ลดอาการอักเสบ ปลอบประโลมผิวด้วยว่านหางจระเข้เข้มข้น เสริมเกราะป้องกันผิวให้แข็งแรงอย่างเป็นธรรมชาติ</p>
-          </div>
-          <div class="service-price">45 Min · 1,500 THB</div>
-        </div>
+<section class="section booking" id="booking">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">BOOK YOUR MOMENT</div><h2>จองคิวรับบริการ</h2><p>กรอกข้อมูลเบื้องต้น แล้วทีมงาน Luna Life จะติดต่อกลับเพื่อยืนยันคิว</p></div>
+  <div class="booking-wrap">
+   <form id="bookingForm">
+    <input required name="name" placeholder="ชื่อ - นามสกุล">
+    <input required name="phone" placeholder="เบอร์โทรศัพท์">
+    <select name="service"><option>เลือกบริการที่สนใจ</option><option>Signature Steam & Glow</option><option>Acne Clear & Detox Reset</option><option>Ultra Lifting Facial</option><option>Sensitive Skin Therapy</option><option>Bridal & Event Radiance</option><option>Luna Life Membership</option></select>
+    <input type="date" name="date">
+    <textarea name="note" placeholder="ข้อความเพิ่มเติม / ช่วงเวลาที่สะดวก"></textarea>
+    <button class="form-btn" type="submit">ส่งคำขอจองคิว</button>
+   </form>
+   <div class="success" id="success">ขอบคุณค่ะ ✦ ได้รับข้อมูลแล้ว ทีมงานจะติดต่อกลับเพื่อยืนยันคิว</div>
+  </div>
+ </div>
+</section>
 
-        <div class="service-card">
-          <div>
-            <h3>Bridal &amp; Event Radiance</h3>
-            <p>โปรแกรมเตรียมผิวหน้าเจ้าสาวและโอกาสพิเศษ ฟื้นฟูผิวแบบด่วนให้เนียนนุ่ม ฉ่ำวาว แต่งหน้าติดทนนานยิ่งขึ้น (Bridal Skin Prep)</p>
-          </div>
-          <div class="service-price">90 Min · 3,200 THB</div>
-        </div>
-
-        <div class="service-card">
-          <div>
-            <h3>Luna Life Clinic Membership</h3>
-            <p>เมมเบอร์ชิปดูแลผิวพรรณรายเดือนอย่างต่อเนื่อง พร้อมสิทธิ์ตรวจวิเคราะห์สภาพผิว และส่วนลดพิเศษสำหรับทรีตเมนต์เสริมความงาม</p>
-          </div>
-          <div class="service-price">Start from 3,900 THB / mo</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS / EXPERIENCE -->
-  <section id="experience" class="process-section">
-    <div class="wrap">
-      <div class="section-title">
-        <span class="sub">The Treatment Journey</span>
-        <h2>ขั้นตอนการปรนนิบัติผิวพรรณ (Clinical Process)</h2>
-      </div>
-      
-      <div class="process-grid">
-        <div class="process-item">
-          <div class="process-num">01</div>
-          <h3>Skin Consultation</h3>
-          <p>ตรวจเช็กและวิเคราะห์สภาพผิวหน้า เพื่อวางแผนการดูแลผิวให้ตรงจุดที่สุด</p>
-        </div>
-        <div class="process-item">
-          <div class="process-num">02</div>
-          <h3>Deep Cleansing</h3>
-          <p>ทำความสะอาดผิวหน้าและรูขุมขนอย่างล้ำลึก เพื่อเตรียมพร้อมรับการบำรุง</p>
-        </div>
-        <div class="process-item">
-          <div class="process-num">03</div>
-          <h3>Active Therapy</h3>
-          <p>ผลักวิตามิน หรือใช้นวัตกรรมทรีตเมนต์เสริมความงามบำรุงเข้าสู่ชั้นผิว</p>
-        </div>
-        <div class="process-item">
-          <div class="process-num">04</div>
-          <h3>Soothing &amp; Lock</h3>
-          <p>มาสก์ปลอบประโลมผิว พร้อมลงครีมบำรุงและครีมกันแดดเพื่อปกป้องผิวขั้นสูงสุด</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING & LOCATION -->
-  <section id="booking">
-    <div class="wrap booking-grid">
-      
-      <!-- Info -->
-      <div class="booking-info">
-        <span class="serif" style="color: var(--accent-gold); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9rem;">Appointment &amp; Location</span>
-        <h2>จองนัดหมายเข้ารับบริการ</h2>
-        <p>ติดต่อ Luna Life Clinic คลินิกดูแลผิวพรรณเพื่อจองคิวทำทรีตเมนต์ สำหรับลูกค้าใหม่รับสิทธิ์ตรวจวิเคราะห์สภาพผิวหน้าฟรี</p>
-
-        <div class="hours-box">
-          <dl>
-            <dt>อังคาร – ศุกร์</dt><dd>10:00 – 19:00 น.</dd>
-            <dt>เสาร์ – อาทิตย์</dt><dd>10:00 – 18:00 น.</dd>
-            <dt>วันจันทร์</dt><dd>ปิดทำการ (Closed)</dd>
-          </dl>
-        </div>
-
-        <div class="map-box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.117877434978!2d98.31674467481832!3d7.7773239922422235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305029dc08a9d179%3A0xf3269ce8f0df7814!2sLUNA%20LIFE%20Spa!5e0!3m2!1sth!2sth!4v1788858552047!5m2!1sth!2sth" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <form class="booking-panel" id="booking-form" action="https://api.web3forms.com/submit" method="POST">
-        <h3>Book an Appointment</h3>
-        <p class="sub-text">ระบุเวลาและบริการทรีตเมนต์ที่ต้องการ เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันคิว</p>
-
-        <!-- Web3Forms Access Key -->
-        <input type="hidden" name="access_key" value="85688a34-7d1c-4e77-aec5-036898a8ec66">
-        <input type="hidden" name="subject" value="New Booking — Luna Life Clinic">
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">ชื่อ-นามสกุล / Name</label>
-            <input id="name" name="name" type="text" required placeholder="คุณสมชาย ใจดี">
-          </div>
-          <div class="form-group">
-            <label for="phone">เบอร์โทรศัพท์ / Phone</label>
-            <input id="phone" name="phone" type="tel" required placeholder="063-218-5001">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">อีเมล / Email</label>
-          <input id="email" name="email" type="email" required placeholder="lunalife198800@gmail.com">
-        </div>
-
-        <div class="form-group">
-          <label for="treatment">บริการที่สนใจ / Select Treatment</label>
-          <select id="treatment" name="treatment">
-            <option>Signature Steam & Glow — 45 Min</option>
-            <option>Acne Clear & Detox Reset (รักษาสิว) — 60 Min</option>
-            <option>Ultra Lifting & Facial Massage (นวดหน้ายกกระชับ) — 75 Min</option>
-            <option>Sensitive Skin Therapy (ผิวแพ้ง่าย) — 45 Min</option>
-            <option>Bridal & Event Radiance — 90 Min</option>
-            <option>รับคำปรึกษาตรวจสภาพผิวหน้าก่อนตัดสินใจ</option>
-          </select>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="date">วันที่สะดวก / Preferred Date</label>
-            <input id="date" name="date" type="date">
-          </div>
-          <div class="form-group">
-            <label for="time">เวลาที่สะดวก / Preferred Time</label>
-            <input id="time" name="time" type="time">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="message">ข้อกังวลเรื่องผิว / Skin Concerns</label>
-          <textarea id="message" name="message" rows="3" placeholder="ระบุปัญหาสิว ผิวแพ้ง่าย หรือข้อกังวลเพิ่มเติม..."></textarea>
-        </div>
-
-        <button type="submit" class="btn-primary">ส่งข้อมูลจองคิว (Confirm Booking)</button>
-        <p class="form-note" id="form-note">ระบบจะส่งข้อมูลไปยังทีมงาน Luna Life Clinic โดยตรง</p>
-      </form>
-
-    </div>
-  </section>
-
+<section class="section contact" id="contact">
+ <div class="container contact-grid">
+  <div class="contact-info">
+   <div class="eyebrow">CONTACT</div>
+   <h2>Come visit<br>Luna Life.</h2>
+   <p>สอบถามรายละเอียดบริการ หรือนัดหมายล่วงหน้าได้ตามช่องทางด้านล่าง</p>
+   <div class="contact-list">
+    <div>☎　063-218-5001</div>
+    <div>✉　lunalife198800@gmail.com</div>
+    <div>◎　Instagram: @lunalife.clinic</div>
+    <div>⌁　LINE: Luna Life Clinic</div>
+   </div>
+  </div>
+  <div class="map">
+   <iframe src="https://www.google.com/maps?q=LUNA%20LIFE%20Spa%20Phuket&output=embed" loading="lazy"></iframe>
+  </div>
+ </div>
+</section>
 </main>
 
-<!-- FOOTER -->
-<footer id="contact">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <h4>Luna Life Clinic</h4>
-        <p>Luna Life Clinic &amp;  คลินิกดูแลผิวพรรณ รักษาสิว และนวดหน้าปรนนิบัติผิวสไตล์เรียบหรู เพื่อความงามธรรมชาติของคุณ</p>
-      </div>
-      <div>
-        <p class="footer-col-title">Address &amp; Contact</p>
-        <p style="margin-bottom: 12px;">128 Thanon Rimhaad<br>Nakhon Si Thammarat, Thailand</p>
-        <ul>
-          <li><a href="tel:0632185001">063-218-5001</a></li>
-          <li><a href="mailto:lunalife198800@gmail.com">lunalife198800@gmail.com</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Social Connect</p>
-        <ul>
-          <!-- อัปเดตลิงก์ Instagram เรียบร้อยแล้ว -->
-          <li><a href="https://www.instagram.com/lunalife.clinic?stkn=ZGVoZmp4ang4aTE0&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram — @lunalife.clinic</a></li>
-          <li><a href="#">Facebook — Luna Life Clinic คลินิกผิวพรรณ</a></li>
-          <li><a href="#">LINE Official — @lunalifeclinic</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <span>© 2026 Luna Life Clinic. All rights reserved. | Luna Life Clinic &amp; Studio</span>
-      <span>Privacy Policy | Terms of Service</span>
-    </div>
-  </div>
+<footer>
+ <div class="container footer-grid">
+  <div class="footer-logo">LUNALIFE</div>
+  <small>© 2026 Luna Life Clinic. All rights reserved.</small>
+  <small>Refine Your Natural Radiance</small>
+ </div>
 </footer>
 
+<div class="float">
+ <a href="tel:0632185001">TEL</a>
+ <a href="https://line.me/ti/p/cLrjHZyFEr" target="_blank">LINE</a>
+</div>
+
 <script>
-  document.getElementById('booking-form').addEventListener('submit', function(e){
-    e.preventDefault();
-    var form = this;
-    var btn = form.querySelector('button[type="submit"]');
-    var note = document.getElementById('form-note');
-    var originalText = btn.textContent;
-
-    btn.textContent = 'กำลังส่งข้อมูล...';
-    btn.disabled = true;
-
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify(Object.fromEntries(new FormData(form)))
-    })
-      .then(function(res){ return res.json(); })
-      .then(function(data){
-        if (data.success){
-          btn.textContent = 'ส่งข้อมูลเรียบร้อยแล้ว';
-          note.textContent = "ขอบคุณค่ะ ทางคลินิกได้รับข้อมูลแล้วและจะติดต่อกลับเพื่อยืนยันนัดหมายโดยเร็วที่สุด";
-          note.style.color = '#C5A059';
-          form.reset();
-        } else {
-          throw new Error(data.message || 'Submission failed');
-        }
-      })
-      .catch(function(){
-        btn.textContent = 'ลองใหม่อีกครั้ง';
-        note.textContent = 'เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาลองใหม่อีกครั้งหรือติดต่อผ่าน LINE/โทรศัพท์';
-        note.style.color = '#b5533c';
-      })
-      .finally(function(){
-        setTimeout(function(){
-          btn.textContent = originalText;
-          btn.disabled = false;
-        }, 4000);
-      });
-  });
+document.querySelector(".menu").addEventListener("click",()=>{
+ const n=document.querySelector(".navlinks");
+ const open=n.style.display==="flex";
+ n.style.display=open?"none":"flex";
+ if(!open){
+  n.style.position="absolute";n.style.top="82px";n.style.left="0";n.style.right="0";
+  n.style.padding="25px";n.style.background="rgba(250,247,241,.98)";
+  n.style.flexDirection="column";n.style.alignItems="center";
+ }
+});
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>{
+ if(innerWidth<=900) document.querySelector(".navlinks").style.display="none";
+}));
+document.getElementById("bookingForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ document.getElementById("success").style.display="block";
+ e.target.reset();
+});
 </script>
-
 </body>
 </html>
